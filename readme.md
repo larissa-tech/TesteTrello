@@ -3,6 +3,7 @@
 Funcionalidade: Transferência de valores entre correntistas
 Eu como cliente correntista do banco xyz
 Desejo preencher os dados necessários, a fim de realizar uma transferência para outro correntista.
+===================================================================================================
 
 Cenário 1:  Transferência com sucesso de um cliente cadastrado
 Dado que eu seja um cliente correntista cadastrado no banco XYZ
