@@ -3,7 +3,7 @@
 Funcionalidade: Transferência de valores entre correntistas
 Eu como cliente correntista do banco xyz
 Desejo preencher os dados necessários, a fim de realizar uma transferência para outro correntista.
-====================================================================================================
+
 Cenário 1:  Transferência com sucesso de um cliente cadastrado
 Dado que eu seja um cliente correntista cadastrado no banco XYZ
 e que eu esteja logado no app do banco XYZ
@@ -18,7 +18,7 @@ Preencher o campo de data de efetivação
 e
 Clicar em transferir
 Então sistema retorna mensagem de transferência realizada com sucesso
-=====================================================================
+
 Cenário 2:  Transferência de valor não autorizada
 Dado que eu seja um cliente correntista cadastrado no banco XYZ
 e que eu esteja logado no app do banco XYZ
@@ -33,7 +33,7 @@ Preencher o campo de data de efetivação
 e
 Clicar em transferir
 Então o sistema retorna mensagem de transferência NÃO autorizada, pois o valor ultrapassa o limite disponível em minha conta.
-======================================================================
+
 Cenário 3:  Transferência com falha  - Falta de preenchimento de campo obrigatório Valor 
 
 Dado que eu seja um cliente correntista cadastrado no banco XYZ
@@ -49,7 +49,7 @@ e
 Clicar em transferir
 Então o sistema retorna mensagem de falha informando que o valor de transferência não foi informado.
 
-======================================================================
+
 Cenário 4:  Transferência com falha-Falta de preenchimento de campo obrigatório Cliente destino 
 
 Dado que eu seja um cliente correntista cadastrado no banco XYZ
@@ -64,7 +64,7 @@ Não preencher o campo cliente destino
 e
 Clicar em transferir
 Então o sistema retorna mensagem de falha informando que o campo do cliente destino, não foi informado. 
-======================================================================
+
 Cenário 5:  Transferência com falha-Falta de preenchimento de campo obrigatório Data da efetivação
 
 Dado que eu seja um cliente correntista cadastrado no banco XYZ
@@ -79,7 +79,7 @@ Não preencher o campo de data de efetivação
 e
 Clicar em transferir
 Então o sistema retorna mensagem de falha informando que não é possível confirmar a transferência sem informar a data de efetivação da operação.
-=======================================================================
+
 Cenário 6:  Transferência com falha- Cliente destino não é correntista
 
 Dado que eu seja um cliente correntista cadastrado no banco XYZ
@@ -95,7 +95,7 @@ e
 Clicar em transferir
 Então o sistema retorna mensagem de falha informando que não é possível prosseguir com a transferência pois o cliente destino não é correntista do banco XYZ.
 
-======================================================================
+
 
 Cenário 7:  Transferência com falha- Nenhum campo informado
 
@@ -111,7 +111,7 @@ Não preencher o campo de data de efetivação
 e
 Clicar em transferir
 Então o sistema retorna mensagem de falha informando que não é possível prosseguir com a transferência pois é necessário que todos os campos sejam informados.
-==================================================
+
 
 
 Cenário 8: Cancelamento da operação de transferência
