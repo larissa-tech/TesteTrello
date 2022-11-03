@@ -174,3 +174,6 @@ from curso c
     inner join disciplina d on d.codd = c.disciplina
     inner join professor p on p.disciplina = d.codd
 where c.ano BETWEEN '2000-01-01' and '2020-12-31'
+
+
+3-Testes disponíveis na pasta integration e mapa mental disponivel na pasta fixture.
